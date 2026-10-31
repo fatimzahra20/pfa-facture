@@ -1,0 +1,45 @@
+/* src/index.css — Reset global minimal */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #111827;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Transitions globales */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Fix MUI table overflow */
+.MuiTableContainer-root {
+  overflow-x: auto;
+}
